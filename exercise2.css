@@ -14,6 +14,7 @@ body{
 }
 
 .top-menu{
+  position: relative;
   display: flex;
   justify-content:center;
   background-color: white;
@@ -55,6 +56,29 @@ div.top-menu a:hover{
 div.top-menu a:not(.counseling){
   color: black;
   
+}
+
+.burger{
+  position:absolute;
+  right:12%;
+  margin-right: 2rem;
+}
+.burger:before,.burger:after{  
+    position: absolute;
+    content: "";
+    display: block;
+    height:1.2rem;
+    width: 2.1rem;
+    border-top-style: solid;
+    border-bottom-style: solid;
+
+}
+
+
+@media screen and (min-width:1130px){
+    .burger{
+      display: none;
+    }
 }
 
 @media screen and (max-width:1130px){
